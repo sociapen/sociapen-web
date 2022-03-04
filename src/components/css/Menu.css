@@ -168,7 +168,7 @@
 }
 
 .sociapen-App-menu-interaction-pane-logout-btn:hover {
-  background-color: #ff0000;
+  background-color: var(--danger-color);
   color: white;
   width: 75%;
   transform: scale(0.85);
