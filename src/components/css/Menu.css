@@ -46,18 +46,19 @@
 	border: 0.1em solid black;
 	border-radius: 2em;
 	color: #000000;
-	background-color: var(--theme-color);
 }
 
 .sociapen-App-menu-selection-pane{
 	margin-right: 1rem;
 	width: 20vw;
+	background: var(--theme-color);
 }
 
 .sociapen-App-menu-interaction-pane{
 	margin-left: 1rem;
 	width: 80vw;
 	font-size: larger;
+	background: linear-gradient(135deg, var(--theme-color), var(--theme-color), #FFFFFF);
 }
 
 .sociapen-App-menu-interaction-pane > * {
