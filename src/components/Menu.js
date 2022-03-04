@@ -30,16 +30,16 @@ export default function Menu() {
 				<div className='sociapen-App-menu-interaction-pane'>
 					<div style={{display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}>
 						<picture className='sociapen-App-menu-interaction-pane-profile-pic'>
-							{ isURL(currentUserAdditionalData.photo) ? <img src={currentUserAdditionalData.photo} alt={currentUserAdditionalData.name} /> : <RenderMascot color={currentUserAdditionalData.photo} /> }
+							{ isURL(currentUserAdditionalData.photo) ? <img referrerPolicy="no-referrer" src={currentUserAdditionalData.photo} alt={currentUserAdditionalData.name} /> : <RenderMascot color={currentUserAdditionalData.photo} /> }
 						</picture>
-						<h1>{ currentUserAdditionalData.name }</h1>
+						<h1 style={{color: '#FFFFFF'}}>{ currentUserAdditionalData.name }</h1>
 					</div>
 					<div className='sociapen-App-menu-interaction-pane-profile-info'>
-						<div><img src={SVGperson} alt="username"/>&nbsp;<span>Username</span>&nbsp;<span style={{color: 'var(--theme-color)'}}>{ currentUserAdditionalData.username }</span></div>
-						<div><img src={SVGemail} alt="email"/>&nbsp;<span>Email</span>&nbsp;<span style={{color: 'var(--theme-color)'}}>{ currentUser.email }</span></div>
-						{ currentUser.phoneNumber ? <div><img src={SVGphone} alt="phone"/>&nbsp;<span style={{color: 'var(--theme-color)'}}>Phone</span>&nbsp;<span>{ currentUser.phoneNumber }</span></div> : null}
-						<div><img src={SVGcalender} alt="joined on"/>&nbsp;<span>Account Created On</span>&nbsp;<span style={{color: 'var(--theme-color)'}}>{ new Date(currentUser.metadata.creationTime ?? Date.now()).toDateString() }</span></div>
-						<div><img src={SVGcalender} alt="last login"/>&nbsp;<span>Last SignIn On</span>&nbsp;<span style={{color: 'var(--theme-color)'}}>{ new Date(currentUser.metadata.lastSignInTime ?? Date.now()).toDateString() }</span></div>
+						<div style={{ display: 'flex', alignItems: 'flex-end' }}><img src={SVGperson} alt="username" />&nbsp;<span>Username</span>&nbsp;<span style={{ color: '#FFFFFF' }}>{currentUserAdditionalData.username}</span></div>
+						<div style={{ display: 'flex', alignItems: 'flex-end' }}><img src={SVGemail} alt="email"/>&nbsp;<span>Email</span>&nbsp;<span style={{color: '#FFFFFF'}}>{ currentUser.email }</span></div>
+						{ currentUser.phoneNumber ? <div style={{ display: 'flex', alignItems: 'flex-end' }}><img src={SVGphone} alt="phone"/>&nbsp;<span style={{color: '#FFFFFF'}}>Phone</span>&nbsp;<span>{ currentUser.phoneNumber }</span></div> : null}
+						<div style={{ display: 'flex', alignItems: 'flex-end' }}><img src={SVGcalender} alt="joined on"/>&nbsp;<span>Account Created On</span>&nbsp;<span style={{color: '#FFFFFF'}}>{ new Date(currentUser.metadata.creationTime ?? Date.now()).toDateString() }</span></div>
+						<div style={{ display: 'flex', alignItems: 'flex-end' }}><img src={SVGcalender} alt="last login"/>&nbsp;<span>Last SignIn On</span>&nbsp;<span style={{color: '#FFFFFF'}}>{ new Date(currentUser.metadata.lastSignInTime ?? Date.now()).toDateString() }</span></div>
 					</div>
 					<div style={{ flexGrow: '2' }}/>
 					<button className='sociapen-App-menu-interaction-pane-logout-btn' onClick={() => auth.signOut().then(() => navigate('/auth/login'))}>Logout</button>

@@ -51,7 +51,7 @@ export default function Pen() {
 			{author ? author.name : null}<br />
 			{pen.timestamp.toString()}<br />
 			{isURL(author.photo) ? 
-				<img src={author.photo} /> :
+				<img referrerPolicy="no-referrer" src={author.photo} /> :
 				<RenderMascot color={author.photo}/>
 			}
 		</div>

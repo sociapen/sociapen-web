@@ -6,9 +6,9 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	background-color: var(--theme-color);
+	background-color: var(--bg-color);
 	border-radius: 0 0 1.25em 1.25em;
-	border-bottom: 2.5px solid white;
+	border-bottom: 2.5px solid var(--theme-color);
 }
 
 .sociapen-App-nav *{
@@ -18,19 +18,13 @@
 }
 
 .sociapen-App-nav img, .sociapen-App-nav svg{
-	height: 90%;
+	height: 100%;
 	width: auto;
 }
 
 .sociapen-App-nav-logo{
 	align-items: baseline;
 	cursor: pointer;
-}
-
-.sociapen-App-nav-logo h1{
-	color: var(--bg-color);
-	font-weight: 900;
-	font-size: xx-large;
 }
 
 .sociapen-App-nav-user img, .sociapen-App-nav-user svg{

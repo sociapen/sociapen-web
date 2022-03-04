@@ -43,10 +43,10 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	border: 1px solid black;
+	border: 0.1em solid black;
 	border-radius: 2em;
-	color: #FFFFFF;
-	background-color: rgba(0, 0, 0, 0.95);
+	color: #000000;
+	background-color: var(--theme-color);
 }
 
 .sociapen-App-menu-selection-pane{
@@ -57,6 +57,7 @@
 .sociapen-App-menu-interaction-pane{
 	margin-left: 1rem;
 	width: 80vw;
+	font-size: larger;
 }
 
 .sociapen-App-menu-interaction-pane > * {
@@ -71,8 +72,8 @@
 .sociapen-App-menu-selection-pane > button{
 	padding: 1rem;
 	width: 100%;
-	color: #FFFFFF;
-	background-color: rgb(10, 10, 10);
+	color: var(--fore-color);
+	background-color: rgba(255, 255, 255, 0.75);
 	font-weight: bolder;
 	font-size: large;
 	margin-bottom: 1rem;
@@ -93,7 +94,7 @@
 }
 
 .sociapen-App-menu-selection-pane-selected{
-	border: 2px solid white !important;
+	border: 2px solid var(--fore-color) !important;
 
 }
 
@@ -126,7 +127,7 @@
 .sociapen-App-menu-interaction-pane-logout-btn{
 	margin-top: 2em;
 	padding: 0.5em;
-	color: var(--fore-color);
+	color: #FFFFFF;
 	width: 50%;
 	background-color: var(--danger-color);
 	border: 5px solid transparent;
@@ -138,7 +139,7 @@
 }
 
 .sociapen-App-menu-interaction-pane-logout-btn:hover{
-	opacity: 0.75;
+	background-color: #FF0000;
 	width: 75%;
 	transform: scale(0.85);
 	transition: 250ms;
