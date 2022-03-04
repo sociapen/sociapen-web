@@ -1,0 +1,44 @@
+.sociapen-App-nav{
+	position: fixed;
+	padding: 0.5em 1em;
+	width: 100vw;
+	height: 10vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	background-color: var(--theme-color);
+	border-radius: 0 0 1.25em 1.25em;
+	border-bottom: 2.5px solid white;
+}
+
+.sociapen-App-nav *{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.sociapen-App-nav img, .sociapen-App-nav svg{
+	height: 90%;
+	width: auto;
+}
+
+.sociapen-App-nav-logo{
+	align-items: baseline;
+	cursor: pointer;
+}
+
+.sociapen-App-nav-logo h1{
+	color: var(--bg-color);
+	font-weight: 900;
+	font-size: xx-large;
+}
+
+.sociapen-App-nav-user img, .sociapen-App-nav-user svg{
+	cursor: pointer;
+	border-radius: 5em;
+}
+
+.sociapen-App-nav-user img:hover, .sociapen-App-nav-user svg:hover{
+	opacity: 0.9;
+	border: 0.15rem solid rgba(255, 255, 255, 1);
+}

@@ -1,0 +1,37 @@
+:root{
+  --primary-color: #47381C;
+  --theme-color: #F09A18;
+  --bg-color: #F1E9CE;
+  --fore-color: #000000;
+  --danger-color: #EB2424;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+*::selection{
+  color: var(--fore-color);
+  background-color: var(--theme-color);
+}
+
+html{
+  scroll-behavior: smooth;
+  overflow: hidden;
+}
+
+body{
+  color: var(--fore-color);
+  background-color: var(--bg-color);
+}
+
+.sociapen-App-window{
+  position: fixed;
+  top: 10vh;
+  bottom: 0;
+  width: 100vw;
+  height: 90vh;
+}

@@ -1,0 +1,28 @@
+.sociapen-App-loader{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 999999;
+}
+
+.sociapen-App-loader-spinner{
+	position: absolute;
+	width: 75%;
+	height: 75%;
+	border-radius: 100em;
+	border: 2em solid;
+	border-color: var(--theme-color) #00000000;
+	animation: sociapen-CSS-loader-spin 1500ms infinite;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes sociapen-CSS-loader-spin {
+	0% {transform: rotate(0deg)}
+	100% {transform: rotate(360deg)}
+}

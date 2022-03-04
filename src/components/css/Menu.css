@@ -1,0 +1,145 @@
+.sociapen-App-menu-notSignedIn{
+	position: absolute;
+	width: 50%;
+	height: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media screen and (max-width: 800px) {
+	.sociapen-App-menu-notSignedIn{
+		flex-direction: column;
+		width: 95%;
+	}
+	.sociapen-App-menu-notSignedIn > button{
+		width: 90% !important;
+	}
+}
+
+.sociapen-App-menu-notSignedIn > button{
+	padding: 0.75em;
+	color: #FFFFFF;
+	width: 45%;
+	background-color: var(--theme-color);
+	border: 5px solid transparent;
+	border-radius: 5em;
+	font-size: xx-large;
+	transition: 100ms;
+	cursor: pointer;
+}
+
+.sociapen-App-menu-notSignedIn > button:hover{
+	opacity: 0.8;
+	transform: scale(0.9);
+}
+
+.sociapen-App-menu-selection-pane, .sociapen-App-menu-interaction-pane{
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 1px solid black;
+	border-radius: 2em;
+	color: #FFFFFF;
+	background-color: rgba(0, 0, 0, 0.95);
+}
+
+.sociapen-App-menu-selection-pane{
+	margin-right: 1rem;
+	width: 20vw;
+}
+
+.sociapen-App-menu-interaction-pane{
+	margin-left: 1rem;
+	width: 80vw;
+}
+
+.sociapen-App-menu-interaction-pane > * {
+	width: 100%;
+}
+
+.sociapen-App-menu-interaction-pane img{
+	width: 1.5em;
+	height: 1.5em;
+}
+
+.sociapen-App-menu-selection-pane > button{
+	padding: 1rem;
+	width: 100%;
+	color: #FFFFFF;
+	background-color: rgb(10, 10, 10);
+	font-weight: bolder;
+	font-size: large;
+	margin-bottom: 1rem;
+	border: 2px solid transparent;
+	border-radius: 2em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.sociapen-App-menu-selection-pane > button > img{
+	width: 1.5em;
+}
+
+.sociapen-App-menu-selection-pane > button:hover{
+	border: 2px solid rgb(128, 128, 128);
+}
+
+.sociapen-App-menu-selection-pane-selected{
+	border: 2px solid white !important;
+
+}
+
+.sociapen-App-menu-interaction-pane-profile-pic{
+	transition: 100ms;
+}
+
+.sociapen-App-menu-interaction-pane-profile-pic:hover{
+	transform: scale(1.2);
+	transition: 200ms;
+}
+
+.sociapen-App-menu-interaction-pane-profile-pic > *{
+	width: 5.5rem !important;
+	height: 5.5rem !important;
+	aspect-ratio: 1/1;
+	border-radius: 5rem;
+}
+
+.sociapen-App-menu-interaction-pane-profile-info{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.sociapen-App-menu-interaction-pane-profile-info > div{
+	margin-top: 1em;
+}
+
+.sociapen-App-menu-interaction-pane-logout-btn{
+	margin-top: 2em;
+	padding: 0.5em;
+	color: var(--fore-color);
+	width: 50%;
+	background-color: var(--danger-color);
+	border: 5px solid transparent;
+	border-radius: 5em;
+	font-size: xx-large;
+	font-family: monospace;
+	transition: 100ms;
+	cursor: pointer;
+}
+
+.sociapen-App-menu-interaction-pane-logout-btn:hover{
+	opacity: 0.75;
+	width: 75%;
+	transform: scale(0.85);
+	transition: 250ms;
+}
